@@ -36,3 +36,8 @@ https://github.com/npm/npm/archive/v5.3.0.zip
 Node dan sonra node-http-server kurulumu
 npm install node-http-server
 ayrıntılı : https://www.npmjs.com/package/node-http-server
+--------------------------------------------------------------------------------------------
+http-server eklentisi kaldırıldı yerine express kuruldu.
+
+npm install express --save
+ayrıntılı : https://expressjs.com/

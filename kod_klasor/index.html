@@ -1,1 +1,149 @@
-deneme
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>İlk Kod Denemesi</title>
+		
+		<link type="text/css" rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link href="diger_temalar/coy/prism.css" rel="stylesheet" />
+		
+		<script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="assets/jquery.pwstabs.css">
+		<script src="assets/jquery.pwstabs.js"></script>
+		<style>
+			body {
+				line-height: 1;
+				background-color: #129793;
+			}
+			a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Roboto Condensed',arial,helvetica,sans-serif;
+    vertical-align: baseline;
+}
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+		</style>
+	</head>
+
+	<body>
+		<h2>Tab Menü Deneme </h2>
+		
+			<div class="hello_world">
+				<div data-pws-tab="anynameyouwant1" data-pws-tab-name="C++">
+					<pre>
+						<code class="language-cpp">
+							#include <iostream>
+				
+							using namespace std;
+				
+							int main()
+							{
+								float borc=50.0;
+								int i =1;
+								for (i=1;borc<=200;i++)
+								{
+									borc=borc+borc*0.02;
+									cout << i << ".ay borc : " << borc << endl;
+								}
+				
+								cout << i-1 << " ay sonra" << endl;
+								return 0;
+							}
+				
+						</code>
+					</pre>
+				</div>
+				<div data-pws-tab="anynameyouwant2" data-pws-tab-name="PHP">
+					<pre>
+						<code class="language-php">
+								public function getir($tablo, $siralanacak_alan="", $siralama_sekli="", $kac_tane=0, $baslangic=0)
+								{
+									if ($siralanacak_alan=="")
+									{
+										if ($kac_tane==0)
+											return $this->db->get($tablo)->result_array();
+										else
+											return $this->db->get($tablo,$kac_tane,$baslangic)->result_array();
+									}
+									else
+									{
+										if ($kac_tane==0)
+											return $this->db->order_by($siralanacak_alan,$siralama_sekli)->get($tablo)->result_array();
+										else
+											return $this->db->order_by($siralanacak_alan,$siralama_sekli)->get($tablo,$kac_tane,$baslangic)->result_array();
+									}
+								}
+						</code>
+					</pre>
+				</div>
+				<div data-pws-tab="anynameyouwant3" data-pws-tab-name="JavaScript">
+					<pre>
+						<code class="language-javascript">
+								var socket;
+								$( document ).ready(function() {
+										console.log( "Hazır!" );
+										socket = io.connect(<?=SBT_BulutSunucuPort?>);
+										socket.on('connect',function() {
+											console.log("bulut sunucu ile bağlantı kuruldu...");
+										});
+									});
+									
+								$("#deneme_dugme").on('click', function () {
+									led_yak();
+								});
+						</code>
+					</pre>
+				</div>
+			</div>
+
+		<hr>
+		
+		<script src="diger_temalar/coy/prism.js"></script>
+		
+		<script>
+			jQuery(document).ready(function($){
+			   $('.hello_world').pwstabs({
+
+				  // scale / slideleft / slideright / slidetop / slidedown / none
+				  // effect: 'scale',
+			 
+				  // The tab to be opened by default
+				  defaultTab: 1,
+			 
+				  // Set custom container width
+				  // Any size value (1,2,3.. / px,pt,em,%,cm..)
+				  containerWidth: '100%',
+
+				  // Tabs position: horizontal / vertical
+				  tabsPosition: 'horizontal',
+			 
+				  // Tabs horizontal position: top / bottom
+				  horizontalPosition: 'top',
+
+				  // Tabs vertical position: left / right
+				  verticalPosition: 'left',
+
+				  // BETA: Make tabs container responsive: true / false (!!! BETA)
+				  responsive: true,
+
+				  // Themes available: default: '' / pws_theme_violet / pws_theme_green / pws_theme_yellow / pws_theme_gold /
+				  // pws_theme_orange / pws_theme_red / pws_theme_purple / pws_theme_grey
+				  theme: 'pws_theme_dark_violet ',
+
+				  // Right to left support: true/ false
+				  rtl: false
+
+			   });        
+			});
+		</script>
+	</body>
+
+</html>
