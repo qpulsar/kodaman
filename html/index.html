@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>İlk Kod Denemesi</title>
+		
+		
+		
+		<link type="text/css" rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link href="diger_temalar/coy/prism.css" rel="stylesheet" />
+		<link href="diger_temalar/coy/prism-line-numbers.css" rel="stylesheet" />
+		<link href="assets/app.css" rel="stylesheet" />
+		
+		<script src="assets/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="assets/jquery.pwstabs.css">
+		<script src="assets/jquery.pwstabs.js"></script>
+		<script src="assets/jquery.lettering-0.6.1.min.js"></script>
+		<style>
+			body {
+				line-height: 1;
+				background-color: #129793;
+			}
+			a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Roboto Condensed',arial,helvetica,sans-serif;
+    vertical-align: baseline;
+}
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+		</style>
+		
+		<style>
+ html, body {
+    height: 100%;
+  }
+
+  body {
+    
+
+    box-sizing: border-box;
+  }
+
+  .split {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .gutter {
+    background-color: #f0f0f0;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .gutter.gutter-horizontal {
+    cursor: col-resize;
+    background-image: url('assets/grips/vertical.png');
+  }
+
+  .gutter.gutter-vertical {
+    cursor: row-resize;
+    background-image: url('assets/grips/horizontal.png');
+  }
+
+  .split.split-horizontal, .gutter.gutter-horizontal {
+    height: 100%;
+    float: left;
+  }
+  
+	
+  </style>
+  
+  <style>
+code {
+    word-wrap: normal;
+}
+#burasi { overflow: hidden; }
+  </style>
+  
+  <style>
+  #baslik { 
+  padding-left:20px;
+  padding-top:20px;
+  font-size: 55px; margin-bottom:10px;}
+			.section, .minigallery img { display:block; clear:both;}
+			.grid_3 { font-size: 22px;  }
+			
+#logo{font-weight: normal;text-transform:uppercase;font-family:'FranchiseRegular','HelveticaNeue-Bold','League Gothic','Impact',sans-serif;font-size:160px;margin-bottom:-32px;margin-left:10px;color:#c44032;text-shadow:#863027 -4px 4px 0;margin-top:30px;}
+#baslik span{display:inline-block;position:relative;letter-spacing:-1px;-webkit-transition:all 0.2s ease-out;}
+#baslik span:hover{top:3px}
+#baslik .char2, #baslik .char6{color:#e36b23;text-shadow:#9b4d1f -4px 4px 0}
+#baslik .char3, #baslik .char10{z-index:10;color:#e6c92e;text-shadow:#9c8b26 -4px 4px 0}
+#baslik .char4, #baslik .char9{color:#5da028;text-shadow:#427021 -4px 4px 0}
+#baslik .char5, #baslik .char8{color:#4584be;text-shadow:#2f597f -4px 4px 0}
+#baslik .char1, #baslik .char7{color:#7073cf;text-shadow:#4a4d88 -4px 4px 0}
+#baslik .char1{-webkit-transform:rotate(-3deg)}
+#baslik .char3{top:-1px;-webkit-transform:rotate(2deg)}
+#baslik .char4{top:-7px}
+#baslik .char6{top:-7px;-webkit-transform:rotate(2deg)}
+#baslik .char7{}
+#baslik .char8{top:1px;-webkit-transform:rotate(-2deg)}
+#baslik .char9{-webkit-transform:rotate(2deg)}
+#baslik .char10{top:-65px;width:36px;}
+#baslik .char10:hover{-webkit-transition-duration:0.4s;}
+#baslik .char11{top:2px;left:-30px;width:50px;-webkit-transform:rotate(-3deg)}
+#baslik .char12{left:-24px}
+	  </style>
+	  
+	<style>
+		#sol_alt{
+			background-color:white;
+		}
+	</style>
+	  
+	<link rel="stylesheet" href="assets/themes/default/style.min.css" />
+
+
+	</head>
+
+	<body>
+	
+		<div id="sol" class="split split-horizontal">
+			<div id="sol_ust">
+				<div id="baslik"><h1 class="kodaman">Kodaman</h1></div>
+			</div>
+			<div id="sol_alt">
+				<div id="dosya_listesi">
+					<div class="panel panel-default mainpanel">
+							   <div class="panel-heading">
+									   File Browser
+									   <span class="up">
+										<i class="fa fa-level-up"></i> Up
+									   </span> 
+							   </div>
+						  <div class="panel-body">
+								  <table class="linksholder">
+								  </table>
+						  </div>
+
+					</div> 
+					
+				</div>
+			</div>
+		</div>
+		<div id="sag" class="split split-horizontal">
+			<div class="merhaba_dunya">
+				Kodaman programlama dersleri ve kurslarında öğreticilerin yazmış olduğu kodları kolayca ağ veya internet üzerinden öğrencilerle paylaşmasını sağlamak için yazılmış açık kaynak kodlu bir programdır.
+				<div data-pws-tab="anynameyouwant1" data-pws-tab-name="Kodaman" id="burasi">
+					<pre class='line-numbers'>
+						<code class="language-cpp">
+							#include <iostream>
+				
+							using namespace std;
+				
+							int main()
+							{
+								cout << "Merhaba Dunya - Hello World" << endl;
+								return 0;
+							}
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+
+		
+		<script>
+			jQuery(document).ready(function($){
+			   $('.merhaba_dunya').pwstabs({
+
+				  // scale / slideleft / slideright / slidetop / slidedown / none
+				  effect: 'slideright',
+			 
+				  // The tab to be opened by default
+				  defaultTab: 1,
+			 
+				  // Set custom container width
+				  // Any size value (1,2,3.. / px,pt,em,%,cm..)
+				  containerWidth: '100%',
+
+				  // Tabs position: horizontal / vertical
+				  tabsPosition: 'horizontal',
+			 
+				  // Tabs horizontal position: top / bottom
+				  horizontalPosition: 'top',
+
+				  // Tabs vertical position: left / right
+				  verticalPosition: 'left',
+
+				  // BETA: Make tabs container responsive: true / false (!!! BETA)
+				  responsive: true,
+
+				  // Themes available: default: '' / pws_theme_violet / pws_theme_green / pws_theme_yellow / pws_theme_gold /
+				  // pws_theme_orange / pws_theme_red / pws_theme_purple / pws_theme_grey
+				  theme: 'pws_theme_dark_violet ',
+
+				  // Right to left support: true/ false
+				  rtl: false
+
+			   });        
+			});
+		</script>
+		
+		<script src="diger_temalar/coy/prism.js"></script>
+		<script src="diger_temalar/coy/prism-line-numbers.js"></script>
+		
+		
+		<script src="assets/split.min.js"></script>
+		<script>
+			var split = Split(['#sol', '#sag'], {
+				sizes: [15, 85],
+				minSize: 0,
+				gutterSize: 8,
+				cursor: 'col-resize'
+			});
+			
+		</script>
+		
+		<script>
+			$(document).ready(function() {
+				$(".kodaman").lettering();
+			});
+		</script>
+		
+		<script>
+			function getFileName(path) {
+				return path.match(/[-_\w]+[.][\w]+$/i)[0];
+			}
+			$(document).on('click','.dosyalar',function(){
+				var file_name = $(this).data("url");
+				$.get('/file?file_name='+$(this).data("url")).then(function(data){
+					//var hihglight_code = Prism.tokenize(data, 'language-javascript');
+					var only_file_name = getFileName(file_name);
+					$('.merhaba_dunya').pwstabs('addTab', {
+						id: only_file_name,
+						name: only_file_name,
+						icon: 'fa-window-close',
+						content: "<pre class='line-numbers language-javascript code-toolbar'><code>"+data+"</code></pre>"
+					});
+					//Prism.highlightElement($('#file_name')[0]);
+					var toplam_tab_sayisi = $(".merhaba_dunya > div").length;
+					$('.merhaba_dunya').pwstabs('defaultTab', toplam_tab_sayisi);
+					//Prism.highlightElement(element, async, callback);
+					//$("#burasi").html("<pre class='line-numbers'><code class='language-javascript'>"+data+"</code></pre>");
+				});	
+			}); 
+			
+			$(document).on('click','.fa-window-close',function(){
+				//alert($(this).data("parent-tab-id"));
+				var toplam_tab_sayisi = $(".merhaba_dunya > div").length;
+				var kapatilacak_id = $(this).attr("id");
+				var kapa_dugmeleri = $( "#"+$(this).attr("id") );
+				var sayi=0;
+				
+				$("div[data-pws-tab]").each(function(){
+					sayi++;
+					if ($(this).data("pws-tab")==kapatilacak_id)
+					{
+						$('.merhaba_dunya').pwstabs('removeTab', sayi);
+						//$('.merhaba_dunya').pwstabs('defaultTab', sayi-2);
+					}
+				});
+			}); 
+		</script>
+		
+		<script src="/html/assets/datatable/js/jquery.datatables.min.js"></script>
+		<script src="/html/assets/app.js"></script>
+
+		</div>
+
+	</body>
+
+</html>

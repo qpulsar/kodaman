@@ -1,0 +1,3 @@
+jquery.pwstabs.js satır : 248
+prepend append olarak değiştirildi.
+---------------------------------------
